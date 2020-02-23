@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(146, 245, 146);
+}
+
+.bad {
+    color: red;
+}
+
+.mid {
+    color: yellow;
+}
+
+.good {
+    color: green;
+}
+
+.sup {
+    color: purple;
+}
+
+.picture {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.picked > input {
+    display: none;
+}
+
+.picked > input:checked + span {
+    border-style: groove;
+    border-color: royalblue;
+    border-spacing: 10px;
+}
