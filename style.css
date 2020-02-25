@@ -1,28 +1,35 @@
 body {
     background-color: rgb(146, 245, 146);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .bad {
     color: red;
+    cursor: pointer;
 }
 
 .mid {
-    color: yellow;
+    color: orange;
+    cursor: pointer;
 }
 
 .good {
     color: green;
+    cursor: pointer;
 }
 
 .sup {
     color: purple;
+    cursor: pointer;
 }
 
 .picture {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
 }
 
 .picked > input {
@@ -33,4 +40,35 @@ body {
     border-style: groove;
     border-color: royalblue;
     border-spacing: 10px;
+}
+
+.page {
+    background-color: whitesmoke;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    border-style: dotted;
+}
+
+.push {
+    cursor: pointer;
+}
+
+.this {
+    cursor: pointer;
+}
+
+.this > input:checked + span {
+    color: blue;
+    border: none;
+}
+
+.text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4rem;
+    color: goldenrod;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
