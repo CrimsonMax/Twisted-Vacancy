@@ -1,65 +1,109 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>table, th, td {border: 1px solid black;} table {border-collapse: collapse;}</style>
-        <title>Super-Vacancy</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+    <title>Super-Vacancy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
     <div class="page">
         <h1>Вакансия: Junior Frontend Developer</h1>
-        <div style="display: inline-block;"><img class="picture" src="./img/Donald.jpg" width="200" height="200" alt="Фоточка."></div><div style="display: inline-block;"><p><div style="display: inline-block;" class="text">Имя:</div> Максим<br><a href="https://github.com/">Ссылка на репозитоий.</a><br>Опыта работы нет.</p></div>
-    
-        <p><div class="text">Дата собеседования</div><input type="date" name="calendar"></p>
+        <div style="display: inline-block;"><img class="picture" src="./img/Donald.jpg" width="200" height="200"
+                alt="Фоточка."></div>
+        <div style="display: inline-block;">
+            <p><span class="text">Имя:</span> Максим<br><a href="https://github.com/">Ссылка на репозитоий.</a><br>Опыта
+                работы нет.</p>
+        </div>
 
-        <p><div class="text">Уровень владения английским:</div></p>
+        <p>
+        <div class="text">Дата собеседования</div><input type="date" name="calendar"></p>
+
+        <p>
+        <div class="text">Уровень владения английским:</div>
+        </p>
         <label class="bad picked"><input type="radio" name="level" value="Bad"> <span>Плохо</span></label>
         <label class="mid picked"><input type="radio" name="level" value="Average"> <span>Средне</span></label>
         <label class="good picked"><input type="radio" name="level" value="Good"> <span>Хорошо</span></label>
         <label class="sup picked"><input type="radio" name="level" value="Exellent"> <span>Превосходно</span></label>
 
-        <p><div class="text">Ключевые навыки:</div></p>
+        <p>
+        <div class="text">Ключевые навыки:</div>
+        </p>
         <ul>
             <li>HTML</li>
             <li>CSS/LESS</li>
             <li>JavaScript</li>
             <li> ... </li>
         </ul>
-        <input placeholder="Введите навык ..." type="text" name="Skill"><input class="push" type="submit" value="Добавить в список">
+        <input placeholder="Введите навык ..." type="text" name="Skill"><input class="push" type="submit"
+            value="Добавить в список">
 
-        <p><div class="text">Коммуникабельность:</div>
-            <select>
-                <option disabled selected>Выберите значение</option>
-                <option>Сангвиник</option>
-                <option>Холерик</option>
-                <option>Флегматик</option>
-                <option>Меланхолик</option>
-            </select>
+        <p>
+        <div class="text">Коммуникабельность:</div>
+        <select>
+            <option disabled selected>Выберите значение</option>
+            <option>Сангвиник</option>
+            <option>Холерик</option>
+            <option>Флегматик</option>
+            <option>Меланхолик</option>
+        </select>
         </p>
 
-        <p><div class="text">Желаемая з/п</div><input placeholder="Введите значение ..." type="number" name="Skill"></p>
+        <p>
+        <div class="text">Желаемая з/п</div><input placeholder="Введите значение ..." type="number" name="Skill"></p>
 
-        <p><div class="text">Подходит по критериям:</div></p>
-        <label class="this first picked"><input type="checkbox" name="ability" value="Language"><span>Знание английского</span></label>
-        <label class="this second picked"><input type="checkbox" name="ability" value="Salary"><span>Оклад</span></label>
-        <label class="this third picked"><input type="checkbox" name="ability" value="Skills"><span>Навыки</span></label>
-        <label class="this fourth picked"><input type="checkbox" name="ability" value="Goodwill"><span>Сразу видно, что свой человек</span></label>
+        <p>
+        <div class="text">Подходит по критериям:</div>
+        </p>
+        <label class="this first picked"><input type="checkbox" name="ability" value="Language"><span>Знание
+                английского</span></label>
+        <label class="this second picked"><input type="checkbox" name="ability"
+                value="Salary"><span>Оклад</span></label>
+        <label class="this third picked"><input type="checkbox" name="ability"
+                value="Skills"><span>Навыки</span></label>
+        <label class="this fourth picked"><input type="checkbox" name="ability" value="Goodwill"><span>Сразу видно, что
+                свой человек</span></label>
 
-        <p><div class="text">Образование, курсы, и т.п.</div></p>
+        <p>
+        <div class="text">Образование, курсы, и т.п.</div>
+        </p>
         <table>
             <tr>
                 <th>#</th>
                 <th>Сроки обучения</th>
                 <th>Наименование учебного заведения, курсов, ... </th>
             </tr>
-            <tr><td>1</td><td>1991-2002</td><td>Школа</td></tr>
-            <tr><td>2</td><td>2002-2007</td><td>Институт</td></tr>
-            <tr><td>3</td><td>2005-2008</td><td>Курсы английского</td></tr>
+            <tr>
+                <td>1</td>
+                <td>1991-2002</td>
+                <td>Школа</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2002-2007</td>
+                <td>Институт</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2005-2008</td>
+                <td>Курсы английского</td>
+            </tr>
         </table>
     </div>
-    </body>
+</body>
+
 </html>
